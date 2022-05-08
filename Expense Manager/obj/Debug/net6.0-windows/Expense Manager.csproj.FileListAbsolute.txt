@@ -1,0 +1,31 @@
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\Expense Manager.exe
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\Expense Manager.deps.json
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\Expense Manager.runtimeconfig.json
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\Expense Manager.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\Expense Manager.pdb
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\Dapper.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\DAL.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\bin\Debug\net6.0-windows\DAL.pdb
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense Manager.csproj.AssemblyReference.cache
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense Manager.csproj.GenerateResource.cache
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense Manager.AssemblyInfoInputs.cache
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense Manager.AssemblyInfo.cs
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense Manager.csproj.CoreCompileInputs.cache
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense Manager.csproj.CopyComplete
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense Manager.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\refint\Expense Manager.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense Manager.pdb
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense Manager.genruntimeconfig.cache
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\ref\Expense Manager.dll
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense_Manager.FormExpenses.resources
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense_Manager.FormIncomes.resources
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense_Manager.FormLayout.resources
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense_Manager.FormOverview.resources
+C:\School\semestr_2\pv178_c#\projects\project\Expense Manager\Expense Manager\obj\Debug\net6.0-windows\Expense_Manager.FormUsers.resources

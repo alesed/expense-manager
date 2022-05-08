@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expense Manager", "Expense Manager\Expense Manager.csproj", "{32A20600-50E7-47D7-8942-FB358CD2DFE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{CC93DADD-33CA-42ED-9E92-2E236CD55776}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32A20600-50E7-47D7-8942-FB358CD2DFE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A20600-50E7-47D7-8942-FB358CD2DFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A20600-50E7-47D7-8942-FB358CD2DFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A20600-50E7-47D7-8942-FB358CD2DFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC93DADD-33CA-42ED-9E92-2E236CD55776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC93DADD-33CA-42ED-9E92-2E236CD55776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC93DADD-33CA-42ED-9E92-2E236CD55776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC93DADD-33CA-42ED-9E92-2E236CD55776}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9892B37-C455-48C0-889D-11650693790E}
+	EndGlobalSection
+EndGlobal
