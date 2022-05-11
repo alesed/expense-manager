@@ -2,6 +2,6 @@
 {
     public static class Constants
     {
-        public const string Connection = @"server=(localdb)\ProjectModels; Initial Catalog=ExpenseManagerDB; Integrated Security=true;";
+        public const string Connection = @"server=(localdb)\MSSQLLocalDB; Initial Catalog=ExpenseManagerDB; Integrated Security=true;";
     }
 }

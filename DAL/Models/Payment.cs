@@ -7,6 +7,7 @@ namespace DAL.Models
     {
         public int Id { get; set; }
         public bool IsIncome { get; set; }
+        public DateTime DateCreated { get; set; }
         public double Amount { get; set; }
         public int UserId { get; set; }
     }

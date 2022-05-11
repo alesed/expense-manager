@@ -14,6 +14,7 @@ CREATE TABLE [dbo].Users(
 CREATE TABLE [dbo].Payments(
 	[Id][int] IDENTITY(1,1) NOT NULL,
 	[IsIncome][bit],
+	[DateCreated][date],
 	[Amount][float],
 	[UserId][int],
 	CONSTRAINT [PK_Payments] PRIMARY KEY CLUSTERED ([Id] ASC),
@@ -26,6 +27,6 @@ INSERT INTO [Users] VALUES ('Alfred', 'Johnson');
 INSERT INTO [Users] VALUES ('John', 'Doe');
 INSERT INTO [Users] VALUES ('Bo', 'Ris');
 
-INSERT INTO [Payments] VALUES (1, 500, 1);
-INSERT INTO [Payments] VALUES (1, 342, 1);
-INSERT INTO [Payments] VALUES (0, 213, 1);
+INSERT INTO [Payments] VALUES (1, GETDATE(), 500, 1);
+INSERT INTO [Payments] VALUES (1, GETDATE(), 342, 1);
+INSERT INTO [Payments] VALUES (0, GETDATE(), 213, 1);
