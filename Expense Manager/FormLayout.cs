@@ -1,5 +1,6 @@
 ﻿using DAL.Controllers;
 using DAL.Models;
+using Expense_Manager.Excel;
 using System.Runtime.InteropServices;
 
 namespace Expense_Manager
@@ -126,14 +127,14 @@ namespace Expense_Manager
             Application.Exit();
         }
 
-        private void exportButton_Click(object sender, EventArgs e)
+        private async void exportButton_Click(object sender, EventArgs e)
         {
-            // TODO:
+            await Export.ToXlsx();
         }
 
-        private void importButton_Click(object sender, EventArgs e)
+        private async void importButton_Click(object sender, EventArgs e)
         {
-            // TODO:
+            await Import.FromXlsx();
         }
     }
 }
