@@ -125,15 +125,5 @@ namespace Expense_Manager
         {
             Application.Exit();
         }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_Leave(object sender, EventArgs e)
-        {
-
-        }
     }
 }
