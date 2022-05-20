@@ -46,7 +46,7 @@
             // 
             // addExpenseButton
             // 
-            this.addExpenseButton.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.addExpenseButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.addExpenseButton.Location = new System.Drawing.Point(230, 90);
             this.addExpenseButton.Name = "addExpenseButton";
             this.addExpenseButton.Size = new System.Drawing.Size(92, 40);

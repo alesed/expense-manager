@@ -51,10 +51,15 @@ namespace Expense_Manager
         private async Task PopulateUsersDropdown()
         {
             var users = await UserController.GetAllUsers();
+            users = users.Where(item => item.Id != Globals.User.Id).ToList();
 
-            usersDropdown.DataSource = users;
+            var result = new List<User>();
+            result.Add(Globals.User);
+            result.AddRange(users);
+
             usersDropdown.ValueMember = "Id";
             usersDropdown.DisplayMember = "Name";
+            usersDropdown.DataSource = result;
         }
 
         private void usersDropdown_SelectedIndexChanged(object sender, EventArgs e)
