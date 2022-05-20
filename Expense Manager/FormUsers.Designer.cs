@@ -46,7 +46,7 @@
             // createUserLabel
             // 
             this.createUserLabel.AutoSize = true;
-            this.createUserLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.createUserLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.createUserLabel.Location = new System.Drawing.Point(48, 48);
             this.createUserLabel.Name = "createUserLabel";
             this.createUserLabel.Size = new System.Drawing.Size(149, 28);

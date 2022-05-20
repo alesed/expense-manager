@@ -37,7 +37,7 @@
             // expenseLabel
             // 
             this.expenseLabel.AutoSize = true;
-            this.expenseLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.expenseLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.expenseLabel.Location = new System.Drawing.Point(35, 46);
             this.expenseLabel.Name = "expenseLabel";
             this.expenseLabel.Size = new System.Drawing.Size(134, 28);

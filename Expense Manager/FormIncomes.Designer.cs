@@ -37,7 +37,7 @@
             // incomeLabel
             // 
             this.incomeLabel.AutoSize = true;
-            this.incomeLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.incomeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.incomeLabel.Location = new System.Drawing.Point(35, 46);
             this.incomeLabel.Name = "incomeLabel";
             this.incomeLabel.Size = new System.Drawing.Size(134, 28);
@@ -46,7 +46,7 @@
             // 
             // addExpenseButton
             // 
-            this.addIncomeButton.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.addIncomeButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.addIncomeButton.Location = new System.Drawing.Point(230, 90);
             this.addIncomeButton.Name = "addExpenseButton";
             this.addIncomeButton.Size = new System.Drawing.Size(92, 40);
