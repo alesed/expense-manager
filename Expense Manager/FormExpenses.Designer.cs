@@ -61,6 +61,7 @@
             FormExpenses.amountInput.Name = "amountInput";
             FormExpenses.amountInput.Size = new System.Drawing.Size(147, 23);
             FormExpenses.amountInput.TabIndex = 3;
+            FormExpenses.amountInput.Maximum = decimal.MaxValue;
             // 
             // expensesTable
             // 
