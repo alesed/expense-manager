@@ -31,7 +31,7 @@
             this.expenseLabel = new System.Windows.Forms.Label();
             this.addExpenseButton = new System.Windows.Forms.Button();
             FormExpenses.expensesTable = new System.Windows.Forms.DataGridView();
-            FormExpenses.amountInput = new System.Windows.Forms.TextBox();
+            FormExpenses.amountInput = new System.Windows.Forms.NumericUpDown();
             this.SuspendLayout();
             // 
             // expenseLabel
@@ -92,6 +92,6 @@
         private Label expenseLabel;
         private Button addExpenseButton;
         private static DataGridView expensesTable;
-        private static TextBox amountInput;
+        private static NumericUpDown amountInput;
     }
 }

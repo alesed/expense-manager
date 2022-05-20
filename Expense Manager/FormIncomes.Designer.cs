@@ -31,7 +31,7 @@
             this.incomeLabel = new System.Windows.Forms.Label();
             this.addIncomeButton = new System.Windows.Forms.Button();
             FormIncomes.incomesTable = new System.Windows.Forms.DataGridView();
-            FormIncomes.amountInput = new System.Windows.Forms.TextBox();
+            FormIncomes.amountInput = new System.Windows.Forms.NumericUpDown();
             this.SuspendLayout();
             // 
             // incomeLabel
@@ -92,6 +92,6 @@
         private Label incomeLabel;
         private Button addIncomeButton;
         private static DataGridView incomesTable;
-        private static TextBox amountInput;
+        private static NumericUpDown amountInput;
     }
 }

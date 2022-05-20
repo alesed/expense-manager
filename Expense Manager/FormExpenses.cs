@@ -31,7 +31,7 @@ namespace Expense_Manager
 
         private async void addExpenseButton_Click(object sender, EventArgs e)
         {
-            var amountText = amountInput.Text;
+            var amountText = amountInput.Value;
             var amountToSend = Convert.ToDouble(amountText);
             var userId = Globals.User.Id;
 
