@@ -23,8 +23,20 @@ namespace Expense_Manager.Excel
                 row++;
             }
 
-            workbook.SaveAs($"Export_{DateTime.Today.ToString("yyyyMMddHHmmss")}.xlsx");
-            MessageBox.Show("Export done successfully, check \"Export\" directory");
+            var saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Excel files|*.xlsx",
+                Title = "Save an Excel File"
+            };
+
+            saveFileDialog.ShowDialog();
+
+            if (!String.IsNullOrWhiteSpace(saveFileDialog.FileName))
+            {
+                workbook.SaveAs(saveFileDialog.FileName);
+                MessageBox.Show("Export done successfully!");
+            }
+            
         }
 
         private static void SetExportHeader(IXLWorksheet worksheet)

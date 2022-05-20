@@ -17,7 +17,7 @@ namespace Expense_Manager
 
             if (!ValidateUser(name, surname))
             {
-                MessageBox.Show("Please, fill both name and surname!");
+                MessageBox.Show("Please, fill both name and surname,\nminimum 2 characters each!");
                 return;
             }
 
@@ -34,9 +34,9 @@ namespace Expense_Manager
         private bool ValidateUser(string name, string surname)
         {
             if (name == null || 
-                name.Length == 0 ||
+                name.Length < 2 ||
                 surname == null || 
-                surname.Length == 0)
+                surname.Length == 2)
             {
                 return false;
             }
