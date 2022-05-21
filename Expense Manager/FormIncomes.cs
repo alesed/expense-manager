@@ -1,4 +1,5 @@
 ﻿using DAL.Controllers;
+using DAL.Models;
 using System.Data;
 
 namespace Expense_Manager
@@ -35,7 +36,13 @@ namespace Expense_Manager
             var amountToSend = Convert.ToDouble(amountText);
             var userId = Globals.User.Id;
 
-            await PaymentController.InsertPaymentByUser(userId, amountToSend, true);
+            await PaymentController.InsertPaymentByUser(new Payment
+            {
+                IsIncome = true,
+                DateCreated = DateTime.Today,
+                Amount = amountToSend,
+                UserId = userId,
+            });
             await PopulateIncomesTable();
         }
     }

@@ -30,13 +30,19 @@ namespace DAL.Controllers
             }
         }
 
-        public static async Task InsertPaymentByUser(int userId, double amount, bool isIncome)
+        public static async Task InsertPaymentByUser(Payment payment)
         {
             using (var db = new SqlConnection(Constants.Connection))
             {
                 await db.QueryAsync<Payment>(
-                        $"INSERT INTO PAYMENTS(IsIncome, DateCreated, Amount, UserId) VALUES (@isincome, @datecreated, @amount, @userid)", 
-                        new Payment() { IsIncome = isIncome, DateCreated = DateTime.Today, Amount = amount, UserId = userId }
+                        $"INSERT INTO PAYMENTS(IsIncome, DateCreated, Amount, UserId) VALUES (@isincome, @datecreated, @amount, @userid)",
+                        new Payment
+                        {
+                            IsIncome = payment.IsIncome,
+                            DateCreated = payment.DateCreated,
+                            Amount = payment.Amount,
+                            UserId = payment.UserId
+                        }
                     );
             }
         }

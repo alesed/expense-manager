@@ -1,11 +1,12 @@
 ﻿using ClosedXML.Excel;
+using DAL.Controllers;
 using DAL.Models;
 
 namespace Expense_Manager.Excel
 {
     internal static class Import
     {
-        public static void FromXlsx()
+        public static async Task FromXlsx()
         {
             var filePath = GetImportPath();
             if (filePath == string.Empty)
@@ -16,8 +17,24 @@ namespace Expense_Manager.Excel
 
             using (XLWorkbook workBook = new XLWorkbook(filePath))
             {
-                var dataToImport = GetDataFromXlsx(workBook);
-                // TODO:
+                try
+                {
+                    var dataToImport = GetDataFromXlsx(workBook);
+                    await InsertPaymentsToDatabase(dataToImport);
+                    MessageBox.Show("Data imported!\nPlease, restart your page...");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private static async Task InsertPaymentsToDatabase(List<Payment> data)
+        {
+            foreach (Payment payment in data)
+            {
+                await PaymentController.InsertPaymentByUser(payment);
             }
         }
 
@@ -49,23 +66,34 @@ namespace Expense_Manager.Excel
             bool firstRow = true;
             foreach (IXLRow row in workSheet.Rows())
             {
+                bool isIncome;
+                DateTime dateCreated;
+                double amount;
+
                 if (firstRow)
                 {
                     firstRow = false;
                 }
                 else
                 {
-                    var isIncome = Convert.ToBoolean(row.Cell("A").Value);
-                    var dateCreated = DateTime.Parse(row.Cell("B").Value.ToString());
-                    var amount = Convert.ToDouble(row.Cell("C").Value);
-
-                    result.Add(new Payment
+                    
+                    try
                     {
-                        IsIncome = isIncome,
-                        DateCreated = dateCreated,
-                        Amount = amount,
-                        UserId = Globals.User.Id
-                    });
+                        isIncome = Convert.ToBoolean(row.Cell("A").Value);
+                        dateCreated = DateTime.Parse(row.Cell("B").Value.ToString());
+                        amount = Convert.ToDouble(row.Cell("C").Value);
+
+                        result.Add(new Payment
+                        {
+                            IsIncome = isIncome,
+                            DateCreated = dateCreated,
+                            Amount = amount,
+                            UserId = Globals.User.Id
+                        });
+                    } catch
+                    {
+                        throw new Exception($"Row {row.RowNumber()} has incorrect values!");
+                    }
                 }
             }
 
