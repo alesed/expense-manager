@@ -23,7 +23,7 @@
 5. Seed database by running seed.sql script `> sqlcmd -S (localdb)\MSSQLLocalDB -i .\DAL\seed.sql`
 
 ## Troubleshooting
-`Cannot create file 'C:\Users\alese\ExpenseManagerDB.mdf' because it already exists. Change the file path or the file name, and retry the operation.`
+`Cannot create file 'X:\Users\<your-user-name>\ExpenseManagerDB.mdf' because it already exists. Change the file path or the file name, and retry the operation.`
 
 1. Go to your file system, navigate to `Users\<your-user-name>` and delete all files with name ExpenseManagerDB.
 2. Execute `> sqllocaldb stop "MSSQLLocalDB"` and `> sqllocaldb stop "MSSQLLocalDB"`
